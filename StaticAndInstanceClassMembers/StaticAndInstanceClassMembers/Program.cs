@@ -15,12 +15,14 @@ namespace StaticAndInstanceClassMembers
         //privatni konstruktor za inicijalizaciju staticke varijable
         static Circle()
         {
+            Console.WriteLine("Staticni konstruktor pozvan");
             _PI = 3.14F; 
         }
 
         //konstruktor za inicijalizaciju 
         public Circle(int radius)
         {
+            Console.WriteLine("Pozvan konstruktor instance");
             this.radius = radius;
         }
 
@@ -51,3 +53,13 @@ namespace StaticAndInstanceClassMembers
         }
     }
 }
+/*Ispis
+Staticni konstruktor pozvan ---> poziva se cim se kreira novi objekt, tj prije poziva konstruktora instance
+Pozvan konstruktor instance
+Area = 78,5
+Pozvan konstruktor instance
+Area = 113,04
+Press any key to continue . . .
+
+
+*/
