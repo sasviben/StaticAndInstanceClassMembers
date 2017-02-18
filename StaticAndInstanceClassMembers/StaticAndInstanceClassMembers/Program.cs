@@ -8,6 +8,16 @@ namespace StaticAndInstanceClassMembers
 {
     class Circle
     {
+        //staticka varijabla --> kod stvaranja novih objekata ne duplicira se varijabla već svi objekti pokazuju na ovu varijablu u memoriji
+
+        
+        //privatni konstruktor za inicijalizaciju staticke varijable
+
+
+        //konstruktor za inicijalizaciju 
+
+
+        //metoda koja racuna opseg kruznice
 
     }
 
@@ -16,6 +26,9 @@ namespace StaticAndInstanceClassMembers
     {
         static void Main(string[] args)
         {
+            //prvi objekt klase Circle
+
+            //drugi objekt klase circle
         }
     }
 }
